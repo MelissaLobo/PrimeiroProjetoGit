@@ -1,1 +1,37 @@
 
+# PrimeiroProjetoGit
+Primeiro Projeto Git - Blog http://melissalobo.blogspot.com.br
+
+Criando um Repositório no Github
+
+Para criar um repositório no GitHub, clique no botão New repository disponível no +  na sua página inicial:Criando um repositório
+Especifique um nome e opcionalmente uma descrição e clique em Create Repository
+Próximo passo é criar um diretório/pasta local e iniciar o Git fazendo ele se comunicar com o servidor. Você pode criar manualmente a pasta ou usar a linha de comando. Para isso abrimos o terminar e fazemos:
+
+// cria o diretório/pasta
+$ mkdir PrimeiroProjetoGit
+// entra na pasta que criamos
+$ cd PrimeiroProjetoGit
+
+Agora você pode entrar na pasta PrimeiroProjetoGit e criar lá um arquivo de texto qualquer, para podermos commitar algo ou criar pela própria linha de comando com:
+
+// cria um arquivo
+$ touche arquivoQualquer.txt
+ 
+ Em seguida digite os comandos:
+ 
+// inicia o git
+$ git init
+// adiciona os arquivos/modificações no git
+$ git add .
+// adiciona uma descrição ao que será comitado
+$ git commit -m "Primeiro Commit"
+// informamos o endereço do nosso projeto
+$ git remote add origin https://github.com/MelissaLobo/PrimeiroProjetoGit.git
+// envia os arquivos da sua máquina para o repositório criado no Github
+$ git push -u origin master
+
+
+O comando git init serve para "iniciar" o rastreamento de arquivos pelo Git. Esse comando cria um diretório (oculto).git, contendo as configurações necessárias para o funcionamento do sistema. Esse comando só é necessário uma vez.
+O comando git remote add serve para adicionar um repositório "remoto", que por padrão o Git chama de origin, e que nada mais é do que um "atalho" para o endereço do servidor. Vinculando assim o seu projeto ao repositório do Github.
+O comando git push -u origin master envia os arquivos da sua máquina para o repositório.
